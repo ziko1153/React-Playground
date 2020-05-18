@@ -10,6 +10,14 @@
   text-align: center;
 
 }
-.counter h1 {
-  font-size: 20px;
+.counter h2 {
+  font-size: 30px;
+  box-shadow: 10px 10px 8px #888888;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.counter h1  {
+  font-size: 25px;;
 }
