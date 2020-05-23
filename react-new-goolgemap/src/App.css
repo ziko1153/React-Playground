@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
 
 }
 
@@ -26,10 +26,18 @@ z-index: 10;
   display: inline;
   background-color: white;
   color: #333;
-  font-weight: 400;
+  font-weight: 545;
   font-size: 1rem;
   padding: 10px;
   border-radius: 15px;
+  cursor: pointer;
+}
+
+.search h3:hover {
+  background-color: #ddd;
+}
+.search h3 input {
+  cursor: pointer;
 }
 
 .close-btn {
@@ -37,12 +45,17 @@ z-index: 10;
   flex-grow: 1;
   margin: auto 10px;
   z-index: 10;
+  cursor: pointer;
   
+}
+.close-btn span:hover {
+  background-color: #ddd;
 }
 .close-btn span {
   background-color:white;
-  padding:10px 20px;
-  border-radius: 12px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px
 }
 
 .bubble {

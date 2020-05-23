@@ -728,7 +728,12 @@ function Header() {
           {showMap ? (
             <div aria-hidden={false} className="col-md-6 side-nav">
               <div className="control-box">
-                <div className="close-btn " onClick={showMap}>
+                <div
+                  className="close-btn "
+                  onClick={() => {
+                    setShowMap(false);
+                  }}
+                >
                   <span>X</span>
                 </div>
                 <div className="search">
@@ -737,9 +742,7 @@ function Header() {
                   </h3>
                 </div>
               </div>
-              <div className="google-map-view">
-                {<GoogleMapCombo setShowMap={setShowMap} />}
-              </div>
+              <div className="google-map-view">{<GoogleMapCombo />}</div>
             </div>
           ) : null}
         </section>

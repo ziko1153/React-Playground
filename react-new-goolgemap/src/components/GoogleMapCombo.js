@@ -9,7 +9,7 @@ import {
 import mapStyles from "../mapStyles";
 
 const mapContainerStyle = {
-  width: "50vw",
+  width: "99%",
   height: "100vh",
 };
 const center = {
