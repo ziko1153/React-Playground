@@ -57,6 +57,11 @@ function GoogleMapCombo() {
   };
   const onMapLoad = useCallback(map => {
     mapRef.current = map;
+    mapRef.current.setOptions({
+      zoomControlOptions: {
+        position: window.google.maps.ControlPosition.RIGHT_TOP,
+      },
+    });
   }, []);
 
   if (LoadError) return "Error Loading Map";

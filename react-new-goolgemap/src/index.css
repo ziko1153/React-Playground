@@ -67,7 +67,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
- flex: 3;
+  flex: 3;
 }
 
 .img-box {
