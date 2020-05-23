@@ -9,7 +9,7 @@ import {
 import mapStyles from "../mapStyles";
 
 const mapContainerStyle = {
-  width: "100vw",
+  width: "50vw",
   height: "100vh",
 };
 const center = {
@@ -37,7 +37,7 @@ const options = {
   zoomControl: true,
 };
 
-function GoogleMapCombo() {
+function GoogleMapCombo({ setShowMap }) {
   const { isLoaded, LoadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
@@ -59,11 +59,17 @@ function GoogleMapCombo() {
     mapRef.current = map;
   }, []);
 
+  function showMap() {
+    setShowMap(false);
+  }
+
   if (LoadError) return "Error Loading Map";
   if (!isLoaded) return "Loading Map";
   return (
     <div>
-      <div className="close-btn">X</div>
+      <div className="close-btn " onClick={showMap}>
+        X
+      </div>
       <div className="search">
         <h3>
           <input type="checkbox" /> Search As I Move The Map

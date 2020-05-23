@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
-import GoogleMapCombo from "./components/GoogleMapCombo";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Header />
+
+      <Footer />
     </div>
   );
 }

@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import GoogleMapCombo from "./GoogleMapCombo";
 
 function Header() {
+  const [showMap, setShowMap] = useState(false);
+  function CallShowMap() {
+    setShowMap(true);
+  }
+
   return (
     <div>
       <header>
@@ -23,98 +29,107 @@ function Header() {
       <section className="top-rated">
         <h2>
           Top Rated Places To Stay{" "}
-          <div className="pull-right show-map-btn">Show Map</div>
+          <div className="pull-right show-map-btn" onClick={CallShowMap}>
+            Show Map
+          </div>
         </h2>
 
-        <div className="img-list">
-          <div className="img-box">
-            <img src="./img/1.jpeg" />
-            <div className="img-content">
-              <div className="title">
-                Handsome Beach Cottage W Outdoors Lounged{" "}
+        <section className="row">
+          <div className={`${showMap ? "col-md-6" : "col-md-12"} img-list`}>
+            <div className="img-box">
+              <img src="./img/1.jpeg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
               </div>
-              <div className="star">
-                <i className="fa fa-star"></i>4.6 (30)
-              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
             </div>
-            <p className="price">
-              <b>$375</b>/night
-            </p>
-          </div>
-          <div className="img-box">
-            <img src="./img/2.jpg" />
-            <div className="img-content">
-              <div className="title">
-                Handsome Beach Cottage W Outdoors Lounged{" "}
+            <div className="img-box">
+              <img src="./img/2.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
               </div>
-              <div className="star">
-                <i className="fa fa-star"></i>4.6 (30)
-              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
             </div>
-            <p className="price">
-              <b>$375</b>/night
-            </p>
-          </div>
 
-          <div className="img-box">
-            <img src="./img/3.jpg" />
-            <div className="img-content">
-              <div className="title">
-                Handsome Beach Cottage W Outdoors Lounged{" "}
+            <div className="img-box">
+              <img src="./img/3.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
               </div>
-              <div className="star">
-                <i className="fa fa-star"></i>4.6 (30)
-              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
             </div>
-            <p className="price">
-              <b>$375</b>/night
-            </p>
-          </div>
 
-          <div className="img-box">
-            <img src="./img/4.jpg" />
-            <div className="img-content">
-              <div className="title">
-                Handsome Beach Cottage W Outdoors Lounged{" "}
+            <div className="img-box">
+              <img src="./img/4.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
               </div>
-              <div className="star">
-                <i className="fa fa-star"></i>4.6 (30)
-              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
             </div>
-            <p className="price">
-              <b>$375</b>/night
-            </p>
-          </div>
 
-          <div className="img-box">
-            <img src="./img/5.jpg" />
-            <div className="img-content">
-              <div className="title">
-                Handsome Beach Cottage W Outdoors Lounged{" "}
+            <div className="img-box">
+              <img src="./img/5.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
               </div>
-              <div className="star">
-                <i className="fa fa-star"></i>4.6 (30)
-              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
             </div>
-            <p className="price">
-              <b>$375</b>/night
-            </p>
-          </div>
-          <div className="img-box">
-            <img src="./img/6.jpg" />
-            <div className="img-content">
-              <div className="title">
-                Handsome Beach Cottage W Outdoors Lounged{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
               </div>
-              <div className="star">
-                <i className="fa fa-star"></i>4.6 (30)
-              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
             </div>
-            <p className="price">
-              <b>$375</b>/night
-            </p>
           </div>
-        </div>
+          {showMap ? (
+            <div className="col-md-6 side-nav">
+              {<GoogleMapCombo setShowMap={setShowMap} />}
+            </div>
+          ) : null}
+        </section>
       </section>
     </div>
   );
