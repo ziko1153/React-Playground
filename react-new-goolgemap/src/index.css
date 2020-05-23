@@ -1,0 +1,120 @@
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+header {
+
+  display: flex;
+  min-height: 50px;
+  padding: 5px;
+  position: relative;
+  border-bottom: 2px solid #ddd;
+}
+
+
+.logo {
+
+
+  flex: 1;
+}
+.logo img {
+  width: 300px;
+  position: absolute;
+  top: 0;
+
+
+}
+
+.nav-menu {
+  display: flex;
+  font-size: 90%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 20px;
+  padding: 10px;
+  
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.top-rated h2 {
+  margin: 20px;
+  font-weight: 400;
+}
+
+
+.img-list {
+
+  font-size: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  
+ justify-content: flex-start;
+
+}
+
+.img-box {
+ max-width: 25%;
+ min-width: 25%;
+ padding: 10px;
+
+ color: #7d7d7d;
+
+
+
+
+}
+
+.img-box img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.img-content {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.img-content .title {
+
+padding: 5px;
+ flex: 4;
+ line-height:1.5;
+}
+
+.img-content .star i {
+align-content: flex-end;
+  flex: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
