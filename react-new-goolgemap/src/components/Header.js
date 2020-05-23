@@ -29,9 +29,11 @@ function Header() {
       <section className="top-rated">
         <h2>
           Top Rated Places To Stay{" "}
-          <div className="pull-right show-map-btn" onClick={CallShowMap}>
-            Show Map
-          </div>
+          {!showMap ? (
+            <div className="pull-right show-map-btn" onClick={CallShowMap}>
+              Show Map
+            </div>
+          ) : null}
         </h2>
 
         <section className="row">
@@ -64,7 +66,6 @@ function Header() {
                 <b>$375</b>/night
               </p>
             </div>
-
             <div className="img-box">
               <img src="./img/3.jpg" />
               <div className="img-content">
@@ -79,7 +80,6 @@ function Header() {
                 <b>$375</b>/night
               </p>
             </div>
-
             <div className="img-box">
               <img src="./img/4.jpg" />
               <div className="img-content">
@@ -94,7 +94,6 @@ function Header() {
                 <b>$375</b>/night
               </p>
             </div>
-
             <div className="img-box">
               <img src="./img/5.jpg" />
               <div className="img-content">
@@ -123,10 +122,624 @@ function Header() {
                 <b>$375</b>/night
               </p>
             </div>
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>{" "}
+            <div className="img-box">
+              <img src="./img/6.jpg" />
+              <div className="img-content">
+                <div className="title">
+                  Handsome Beach Cottage W Outdoors Lounged{" "}
+                </div>
+                <div className="star">
+                  <i className="fa fa-star"></i>4.6 (30)
+                </div>
+              </div>
+              <p className="price">
+                <b>$375</b>/night
+              </p>
+            </div>
           </div>
           {showMap ? (
-            <div className="col-md-6 side-nav">
-              {<GoogleMapCombo setShowMap={setShowMap} />}
+            <div aria-hidden={false} className="col-md-6 side-nav">
+              <div className="control-box">
+                <div className="close-btn " onClick={showMap}>
+                  <span>X</span>
+                </div>
+                <div className="search">
+                  <h3>
+                    <input type="checkbox" /> Search As I Move The Map
+                  </h3>
+                </div>
+              </div>
+              <div className="google-map-view">
+                {<GoogleMapCombo setShowMap={setShowMap} />}
+              </div>
             </div>
           ) : null}
         </section>

@@ -37,7 +37,7 @@ const options = {
   zoomControl: true,
 };
 
-function GoogleMapCombo({ setShowMap }) {
+function GoogleMapCombo() {
   const { isLoaded, LoadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
@@ -59,22 +59,10 @@ function GoogleMapCombo({ setShowMap }) {
     mapRef.current = map;
   }, []);
 
-  function showMap() {
-    setShowMap(false);
-  }
-
   if (LoadError) return "Error Loading Map";
   if (!isLoaded) return "Loading Map";
   return (
     <div>
-      <div className="close-btn " onClick={showMap}>
-        X
-      </div>
-      <div className="search">
-        <h3>
-          <input type="checkbox" /> Search As I Move The Map
-        </h3>
-      </div>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={15}

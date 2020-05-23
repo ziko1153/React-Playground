@@ -4,34 +4,45 @@
   box-sizing: border-box;
 }
 
+.control-box {
+
+  background: #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 50px;
+  margin-top: 50px;
+
+}
+
 .search {
-  background-color: #fff;
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  z-index: 10;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 10px;
+display: inline;
+flex-grow: 1;
+margin : auto 0;
+z-index: 10;
 }
 
 .search h3 {
-  
-  text-align: center;
+  display: inline;
+  background-color: white;
   color: #333;
   font-weight: 400;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .close-btn {
-  background-color: #fff;
-  position: absolute;
-  top: 2rem;
-  left: 1rem;
+  display: inline;
+  flex-grow: 1;
+  margin: auto 10px;
   z-index: 10;
-  padding: 12px;
+  
+}
+.close-btn span {
+  background-color:white;
+  padding:10px 20px;
   border-radius: 12px;
-  font-size: 1.4rem;
-  cursor: pointer;
 }
 
 .bubble {
