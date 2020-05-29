@@ -3,9 +3,18 @@ import GoogleMapCombo from "./GoogleMapCombo";
 
 function Header() {
   const [showMap, setShowMap] = useState(false);
+  const [hoverId, setHoverId] = useState("");
   function CallShowMap() {
     setShowMap(true);
   }
+
+  const handleMouseEnter = event => {
+    setHoverId(2);
+  };
+
+  const handleMouseLeave = event => {
+    setHoverId("");
+  };
 
   return (
     <div>
@@ -38,7 +47,11 @@ function Header() {
 
         <section className="row">
           <div className={`${showMap ? "col-md-6" : "col-md-12"} img-list`}>
-            <div className="img-box">
+            <div
+              className="img-box"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <img src="./img/1.jpeg" />
               <div className="img-content">
                 <div className="title">
@@ -742,7 +755,9 @@ function Header() {
                   </h3>
                 </div>
               </div>
-              <div className="google-map-view">{<GoogleMapCombo />}</div>
+              <div className="google-map-view">
+                {<GoogleMapCombo hoverId={hoverId} />}
+              </div>
             </div>
           ) : null}
         </section>

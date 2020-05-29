@@ -37,7 +37,7 @@ const options = {
   zoomControl: true,
 };
 
-function GoogleMapCombo() {
+function GoogleMapCombo(props) {
   const { isLoaded, LoadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
@@ -66,6 +66,8 @@ function GoogleMapCombo() {
 
   if (LoadError) return "Error Loading Map";
   if (!isLoaded) return "Loading Map";
+  let i = 0;
+  let hoverId = props.hoverId;
   return (
     <div>
       <GoogleMap
@@ -87,12 +89,12 @@ function GoogleMapCombo() {
           //   position={{ lat: marker.lat, lng: marker.lng }}
           // />
           <OverlayView
-            key={`${marker.lat}-${marker.lng}`}
+            key={i++}
             position={{ lat: marker.lat, lng: marker.lng }}
             mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
           >
             <div
-              className="bubble"
+              className={hoverId === i ? "bubbleHover" : "bubble"}
               onClick={() => {
                 setSelected(marker);
               }}
@@ -129,4 +131,4 @@ function GoogleMapCombo() {
   );
 }
 
-export default GoogleMapCombo;
+export default React.memo(GoogleMapCombo);
