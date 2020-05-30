@@ -13,8 +13,8 @@ const mapContainerStyle = {
   height: "100vh",
 };
 const center = {
-  lat: 37.9005,
-  lng: -122.6444,
+  lat: 37.89660952415718,
+  lng: -122.64474112736148,
 };
 
 const markerList = [
@@ -35,6 +35,17 @@ const markerList = [
 const options = {
   disableDefaultUI: true,
   zoomControl: true,
+  styles: [
+    {
+      featureType: "all",
+      elementType: "labels.icon",
+      stylers: [
+        {
+          visibility: "off",
+        },
+      ],
+    },
+  ],
 };
 
 function GoogleMapCombo(props) {
@@ -54,7 +65,12 @@ function GoogleMapCombo(props) {
     console.log(ne.lng());
     console.log(sw.lat());
     console.log(sw.lng());
+    if (mapRef.current) {
+      console.log("center Lat", mapRef.current.center.lat());
+      console.log("center Long", mapRef.current.center.lng());
+    }
   };
+
   const onMapLoad = useCallback(map => {
     mapRef.current = map;
     mapRef.current.setOptions({
@@ -72,12 +88,12 @@ function GoogleMapCombo(props) {
     <div>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
-        zoom={15}
+        zoom={14}
         center={center}
         options={options}
         onClick={event => {
-          console.log(event.latLng.lat());
-          console.log(event.latLng.lng());
+          console.log("lat", event.latLng.lat());
+          console.log("long", event.latLng.lng());
           setSelected(null);
         }}
         onLoad={onMapLoad}
